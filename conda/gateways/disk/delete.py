@@ -117,6 +117,7 @@ def rmtree(path):
                         [
                             rsync,
                             "-a",
+                            "--no-perms,"
                             "--force",
                             "--delete",
                             join(os.getcwd(), ".empty") + "/",
